@@ -1,9 +1,9 @@
-BEGIN;
+CREATE TABLE IF NOT EXISTS concurrency_demo (
+    record_id INTEGER PRIMARY KEY,
+    balance INTEGER NOT NULL
+);
 
-SELECT balance
-FROM concurrency_demo
-WHERE record_id = 1;
-UPDATE concurrency_demo
-SET balance = 120
-WHERE record_id = 1;
-SELECT * FROM concurrency_demo;
+INSERT INTO concurrency_demo (record_id, balance)
+VALUES (1, 100)
+ON CONFLICT (record_id)
+DO UPDATE SET balance = EXCLUDED.balance;
