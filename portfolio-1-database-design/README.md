@@ -53,4 +53,4 @@ The table creation scripts and sample-data insertion scripts are included in thi
 
 7. Conclusion
 
-This portfolio provided practical experience in relational database design, entity relationships, keys, constraints and normalisation.
+This portfolio provided practical experience in relational database design, entity relationships, keys, constraints, normalisation and sql implementation.
