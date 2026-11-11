@@ -2,7 +2,7 @@ Portfolio 1: Database Design and Modelling
 
 1. Introduction
 
-This portfolio focuses on the design and modelling of a relational database for a social media management system called ConnectSpere.
+This portfolio focuses on the design and modelling of a relational database for a social media called ConnectSphere.
 
 The database is designed to manage users, posts, comments, likes, followers, messages, hashtags and the relationships between these entities.
 
