@@ -12,15 +12,14 @@ The database was designed using relational database principles. Tables were crea
 
 The main entities include:
 
--Users
--Posts
--Comments
--Likes
--Follows
--Notifications
--Messages 
--Hashtags
--Post Hashtags
+- Users
+- Posts
+- Comments
+- Likes
+- Follows
+- Messages
+- Hashtags
+- Post Hashtags
 
 3. Keys and Relationships
 
