@@ -2,7 +2,7 @@ Portfolio 2: Query Processing and Optimisation
 
 1. Introduction
 
-This portfolio demonstrates SQL query processing and optimisation using the ConnectSphere database developed in Portfolio 1.
+This portfolio demonstrates SQL query processing and optimisation using the C"""""onnectSphere database developed in Portfolio 1.
 
 The practical exercises focus on retrieving data, joining related tables, generating reports, creating indexes and examining query performance using PostgreSQL.
 
@@ -43,6 +43,22 @@ Screenshots and query outputs will be included in the Evidence folder to demonst
 - Index creation.
 - Query performance analysis.
 
-6. Conclusion
+6. Performance Comparison Before and After Indexing
+
+The PostgreSQL EXPLAIN (ANALYZE, BUFFERS) command was used to examine the execution plan of a query that retrieves posts belonging to a specific user.
+
+Before indexing, PostgreSQL used a Sequential Scan to search the posts table.
+
+After creating an index on the user_id column, the same query was executed again. PostgreSQL still selected a Sequential Scan.
+
+This occurred because the posts table contained only five records, making a sequential scan a reasonable choice for such a small dataset.
+
+The execution time was 0.102 ms before indexing and 0.121 ms after indexing. These small differences can occur due to system activity and caching and do not establish that indexing reduced performance.
+
+The experiment demonstrated that although indexes can improve query performance, PostgreSQL's query planner decides whether to use an index based on estimated cost and available data.
+
+Screenshots of both execution plans are included in the Evidence folder.
+
+7. Conclusion
 
 This portfolio provided practical experience in SQL query processing and optimisation using PostgreSQL.
