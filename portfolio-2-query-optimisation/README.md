@@ -2,7 +2,7 @@ Portfolio 2: Query Processing and Optimisation
 
 1. Introduction
 
-This portfolio demonstrates SQL query processing and optimisation using the C"""""onnectSphere database developed in Portfolio 1.
+This portfolio demonstrates SQL query processing and optimisation using the ConnectSphere database developed in Portfolio 1.
 
 The practical exercises focus on retrieving data, joining related tables, generating reports, creating indexes and examining query performance using PostgreSQL.
 
