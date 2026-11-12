@@ -17,6 +17,7 @@ The main entities include:
 - Comments
 - Likes
 - Follows
+- Notifications
 - Messages
 - Hashtags
 - Post Hashtags
